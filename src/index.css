@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 72px; /* account for fixed nav height */
+  }
+
+  body {
+    font-family: 'Poppins', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Add extra bottom padding on mobile for the dock nav */
+  @media (max-width: 1023px) {
+    main, footer {
+      padding-bottom: 5rem;
+    }
+  }
+
+  ::selection {
+    background-color: rgba(37, 99, 235, 0.4);
+    color: inherit;
+  }
+
+  /* Smooth focus rings */
+  :focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+/* Theme root colors with rich ALC gradients */
+html.dark body {
+  background-color: #030712;
+  color: #f1f5f9;
+  background-image: 
+    radial-gradient(at 0% 0%, #0d2062 0px, transparent 45%),
+    radial-gradient(at 100% 10%, #1e3a8a 0px, transparent 40%),
+    radial-gradient(at 50% 50%, #091337 0px, transparent 65%),
+    radial-gradient(at 80% 90%, #0c1a40 0px, transparent 50%);
+  background-attachment: fixed;
+}
+
+html.light body {
+  background-color: #f0f5ff;
+  color: #0f172a;
+  background-image: 
+    radial-gradient(at 0% 0%, #dbeafe 0px, transparent 50%),
+    radial-gradient(at 100% 0%, #bfdbfe 0px, transparent 45%),
+    radial-gradient(at 50% 45%, #eff6ff 0px, transparent 60%),
+    radial-gradient(at 10% 85%, #e0e7ff 0px, transparent 45%),
+    radial-gradient(at 90% 90%, #bae6fd 0px, transparent 45%);
+  background-attachment: fixed;
+}
+
+/* ─── Art Viewport Matting ───────────────────────── */
+.art-matting-dark {
+  background: radial-gradient(ellipse at center, #0e1e4a 0%, #030712 100%);
+}
+
+.art-matting-light {
+  background: radial-gradient(ellipse at center, #ffffff 0%, #dbeafe 100%);
+}
+
+/* ─── Single-line marquee ───────────────────────── */
+@keyframes marqueeScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.single-line-marquee {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 32s linear infinite;
+  will-change: transform;
+}
+
+.single-line-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ─── 3D perspective stage ───────────────────────── */
+.perspective-stage {
+  perspective: 1800px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* ─── Fade-in utility ───────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.45s ease both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease both;
+}
+
+/* ─── Shimmer / skeleton ───────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent 25%, rgba(255,255,255,0.06) 50%, transparent 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite;
+}
+
+/* ─── Gradient text helper ───────────────────────── */
+.gradient-text {
+  background: linear-gradient(130deg, #2563eb 0%, #3b82f6 40%, #38bdf8 80%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Card lift micro-interaction ───────────────────────── */
+.card-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* ─── Section entrance: fade + slight rise ───────────────────────── */
+@keyframes sectionEnter {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.section-enter {
+  animation: sectionEnter 0.5s ease both;
+}
+
+/* ─── Pulsing ring for status indicator ───────────────────────── */
+@keyframes ping-slow {
+  0%   { transform: scale(1); opacity: 0.8; }
+  70%  { transform: scale(2.2); opacity: 0; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+.animate-ping-slow {
+  animation: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* ─── Scrollbar ───────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a3040;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ─── Link underline swipe ───────────────────────── */
+.link-swipe {
+  position: relative;
+  display: inline-block;
+}
+.link-swipe::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+.link-swipe:hover::after {
+  width: 100%;
+}
+
+/* ─── Chapter divider line ───────────────────────── */
+.chapter-rule {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.chapter-rule::before,
+.chapter-rule::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.1;
+}

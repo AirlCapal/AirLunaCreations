@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <script>
+   (function(){var o=Storage.prototype.removeItem;Storage.prototype.removeItem=function(k){if(k==='base44_access_token'){try{var t=this.getItem(k);t&&(document.cookie='base44_sign_out_token='+encodeURIComponent(t)+';path=/api/apps/auth/logout;max-age=60'+(location.protocol!=='https:'?';SameSite=Strict':window.top!==window.self?';SameSite=None;Secure;Partitioned':';SameSite=Strict;Secure'))}catch(e){}}return o.call(this,k)}})();
+  </script>
+  <meta charset="utf-8"/>
+  <link href="https://media.base44.com/images/public/6a8c68cf4fb370efa3d9ddac/95ecb6dbf_logo.png/v1/fit/w_180,h_180/95ecb6dbf_logo.png" rel="icon" type="image/svg+xml"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="/manifest.json" rel="manifest"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <title>
+   FolioX — Interactive Portfolio for Digital Professionals
+  </title>
+  <meta content="A bold animated portfolio for developers, designers, marketers, AI specialists and digital freelancers." name="description"/>
+  <script crossorigin="" src="/assets/index-RnyJmg9F.js" type="module">
+  </script>
+  <link crossorigin="" href="/assets/index-BtcYyVsE.css" rel="stylesheet"/>
+  <script type="module">
+   if (window.self === window.top) {
+  let lastPath = "";
+  function getPageNameFromPath(path) {
+    const segments = path.split("/").filter(Boolean);
+    return segments[0] || null;
+  }
+  function trackPageView() {
+    const path = window.location.pathname;
+    if (path === lastPath) return;
+    lastPath = path;
+    const pageName = getPageNameFromPath(path) || "home";
+    const appId = "6a8c68cf4fb370efa3d9ddac";
+    if (!appId) return;
+    fetch(`/api/app-logs/${appId}/log-user-in-app/${pageName}`, {
+      method: "POST",
+    }).catch(() => {});
+  }
+  const originalPushState = history.pushState.bind(history);
+  history.pushState = function (...args) {
+    originalPushState(...args);
+    trackPageView();
+  };
+  const originalReplaceState = history.replaceState.bind(history);
+  history.replaceState = function (...args) {
+    originalReplaceState(...args);
+    trackPageView();
+  };
+  window.addEventListener("popstate", trackPageView);
+  trackPageView();
+}
+  </script>
+  <meta content="on" name="base44-analytics"/>
+  <script id="b44-consent-listener">
+   (function () {
+  if (window.__b44Consent) return;
+  var state = {};
+  var listeners = [];
+  function notify(listener) {
+    try {
+      (state[listener.category] === "granted" ? listener.grant : listener.revoke)();
+    } catch (e) {}
+  }
+  function read(entry) {
+    if (!entry || entry[0] !== "consent" || entry[1] !== "update" || !entry[2]) return;
+    for (var category in entry[2]) {
+      state[category] = entry[2][category];
+      for (var i = 0; i < listeners.length; i++) {
+        if (listeners[i].category === category) notify(listeners[i]);
+      }
+    }
+  }
+  var dataLayer = (window.dataLayer = window.dataLayer || []);
+  // The banner may have restored the visitor's saved choice before this script ran.
+  for (var i = 0; i < dataLayer.length; i++) read(dataLayer[i]);
+  var push = dataLayer.push;
+  dataLayer.push = function () {
+    var result = push.apply(dataLayer, arguments);
+    for (var j = 0; j < arguments.length; j++) read(arguments[j]);
+    return result;
+  };
+  window.__b44Consent = {
+    on: function (category, grant, revoke) {
+      var listener = { category: category, grant: grant, revoke: revoke };
+      listeners.push(listener);
+      if (category in state) notify(listener);
+    },
+  };
+})();
+  </script>
+  <meta content="on" data-source="default" name="base44-visitor-tracking"/>
+  <script id="b44-visitor-tracking">
+   (function () {
+  try {
+    if (window.top !== window) return;
+    var CONSENT_CATEGORY = "analytics_storage";
+    var attributes = "; Path=/; Secure; SameSite=Lax";
+    var keep = "; Max-Age=2592000" + attributes;
+    // Read now: the app's router may drop ?ref= before the visitor consents.
+    var referrerId = new URLSearchParams(window.location.search).get("ref");
+    var referrerOrigin = document.referrer && new URL(document.referrer).origin;
+    function write() {
+      if (referrerId && /^[0-9a-f]{24}$/i.test(referrerId)) {
+        document.cookie = "base44_referrer_id=" + referrerId + keep;
+      }
+      // First touch: a return from a sign-in or checkout page must not replace who sent the visitor.
+      var hasOrigin = /(?:^|;\s*)base44_referrer_origin=/.test(document.cookie);
+      if (!hasOrigin && /^https?:\/\//.test(referrerOrigin) && referrerOrigin !== window.location.origin) {
+        document.cookie = "base44_referrer_origin=" + referrerOrigin + keep;
+      }
+    }
+    function clear() {
+      document.cookie = "base44_referrer_id=; Max-Age=0" + attributes;
+      document.cookie = "base44_referrer_origin=; Max-Age=0" + attributes;
+    }
+    var meta = document.querySelector('meta[name="base44-visitor-tracking"]');
+    var signal = navigator.globalPrivacyControl;
+    // Global Privacy Control opts the visitor out of tracking Base44 turned on by default.
+    var optOut = meta && meta.getAttribute("data-source") === "default" && signal;
+    if (meta && meta.getAttribute("data-privacy-signals") === "honor") {
+      optOut = signal || navigator.doNotTrack === "1";
+    }
+    if (optOut) {
+      clear();
+    } else if (meta && meta.content === "consent") {
+      window.__b44Consent.on(CONSENT_CATEGORY, write, clear);
+    } else {
+      write();
+    }
+  } catch (e) {}
+})();
+  </script>
+  <meta content="yes" name="mobile-web-app-capable"/>
+  <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+  <meta content="ProFolio - Personal Portfolio &amp; Resume" name="apple-mobile-web-app-title"/>
+ </head>
+ <body>
+  <div id="root">
+  </div>
+ </body>
+</html>

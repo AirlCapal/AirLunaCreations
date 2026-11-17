@@ -1,0 +1,1035 @@
+{
+  "profile": {
+    "name": "Airl",
+    "brand": "ALC / AirLuna Creations",
+    "heroTagline": "Hey, I’m Airl",
+    "headline": "Crafting Bold Visual Identities & Dynamic Digital Experiences",
+    "bio": "I’m a graphic designer and front-end developer with nearly six years of experience in branding, print, digital content, and web design. I blend creative typography, bold color palettes, and intuitive user experiences to produce work featured across publications, esports franchises, corporate brands, and creative exhibits.",
+    "heroImage": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/6105f4a764bbe19e7977693e4ff87c22.png",
+    "aboutPortrait": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/eb7a8a18201e5e82655931bea0b0bdf3.jpg",
+    "aboutGraphic": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/12fd254f2b74a1e8ee6082403877641e.png",
+    "skills": [
+      "Graphic Design",
+      "Brand Identity & Guidelines",
+      "Front-end Development",
+      "Web & UI/UX Design",
+      "Print & Editorial Layouts",
+      "Motion Graphics & Video Editing",
+      "Social Media Collateral",
+      "Product & Apparel Mockups"
+    ],
+    "tools": [
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Figma",
+      "Canva Pro",
+      "Adobe Premiere Pro",
+      "After Effects",
+      "HTML5 / CSS3 / JavaScript",
+      "React / Tailwind CSS"
+    ],
+    "experiences": [
+      {
+        "role": "Graphic Design Intern",
+        "company": "eScience Corp.",
+        "period": "2025",
+        "type": "Corporate"
+      },
+      {
+        "role": "Creative Director",
+        "company": "Celestial Esports",
+        "period": "2024 - 2025",
+        "type": "Gaming / Esports"
+      },
+      {
+        "role": "Creative Lead",
+        "company": "Walter Campaign",
+        "period": "2024 - 2025",
+        "type": "Campaign & PR"
+      },
+      {
+        "role": "Graphic Designer",
+        "company": "Infinix",
+        "period": "2024",
+        "type": "Consumer Tech"
+      },
+      {
+        "role": "Art Director",
+        "company": "Knowledge Hive",
+        "period": "2023 - 2025",
+        "type": "Education & Publishing"
+      },
+      {
+        "role": "Lead Graphic Designer & Founder",
+        "company": "AirLuna Creations",
+        "period": "2020 - Present",
+        "type": "Creative Studio"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Science in Information Technology",
+        "institution": "Pamantasan ng Lungsod ng Muntinlupa",
+        "period": "2021 - 2025"
+      },
+      {
+        "degree": "TechVoc - 2D Animation Visual Graphic Design",
+        "institution": "San Pedro Relocation Center National High School",
+        "period": "Graduate"
+      }
+    ],
+    "contacts": {
+      "email": "cjaecapal18@gmail.com",
+      "phone": "+63 910 786 1327",
+      "instagram": "https://www.instagram.com/airluna.creations/",
+      "facebook": "https://www.facebook.com/airl.wythe18/",
+      "linkedin": "http://www.linkedin.com/in/c-jae-irl-capal-130a482a2",
+      "location": "Metro Manila, Philippines"
+    },
+    "rebrandingStory": {
+      "concept": "ALC Rebranding: Eye & Phoenix",
+      "allSeeingEye": "Represents clairvoyance, omniscience, vision, and steadfast goal focus.",
+      "phoenix": "Symbolizes resilience, life, passion, and artistic resurrection.",
+      "palette": [
+        {
+          "name": "Obsidian Noir",
+          "hex": "#000000"
+        },
+        {
+          "name": "Emerald Pine",
+          "hex": "#1A5A43"
+        },
+        {
+          "name": "Jade Mint",
+          "hex": "#4BA875"
+        },
+        {
+          "name": "Citron Gold",
+          "hex": "#C5C451"
+        }
+      ],
+      "smartMockup": "https://images-public.smartmockups.com/mockups/0fde2e288bc_bOgYffdlSEy_pr.jpg",
+      "smartMockup2": "https://images-public.smartmockups.com/mockups/2328ed8c1e9_aRl3pNjxXx9_pr.jpg"
+    },
+    "testimonials": [
+      {
+        "name": "Ms. Gerlie",
+        "role": "Marketing Director",
+        "quote": "You’re the best graphic designer! Your work elevated our entire campaign presence.",
+        "avatar": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/bf588b6295d47b90e3e5001e12c0901d.jpg"
+      },
+      {
+        "name": "Ms. Shella",
+        "role": "Business Owner",
+        "quote": "It’s not so easy to make a logo, but your skills are wonderful. Thank you so much!",
+        "avatar": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/d1084958ecdf95dff7a72d6779b57726.png"
+      },
+      {
+        "name": "Mr. Benz",
+        "role": "Architect Student",
+        "quote": "You have reached my expectations, from the color palette up to the final outcome.",
+        "avatar": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/f589c0cea674634f57feaa63b52547c0.png"
+      },
+      {
+        "name": "Mrs. Sharmaine",
+        "role": "Business Owner & Entrepreneur",
+        "quote": "Good, you’re a great Art Director. The attention to detail and creative direction was phenomenal.",
+        "avatar": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/5664279011e8630cc35dc4a4dab28a98.jpg"
+      }
+    ],
+    "collaborations": [
+      "JCI Alabang",
+      "Gusi Peace Prize International",
+      "SDO Muntinlupa",
+      "Boy Scouts of the Philippines",
+      "University of Perpetual Help System DALTA - Calamba Campus",
+      "PLMun University Student Council",
+      "Lakbayan"
+    ]
+  },
+  "categories": [
+    {
+      "id": "all",
+      "label": "All Works",
+      "badge": "Featured",
+      "items": []
+    },
+    {
+      "id": "logos",
+      "label": "Brand & Logo Design",
+      "desc": "Logomarks, modern monograms, and iconic brand identities",
+      "items": [
+        {
+          "id": "MAFzF1cyC6w",
+          "image": "/assets/media/LOGO%20DESIGN/a07495b8dcca196f8dfd0bf773624860.png",
+          "width": 1600,
+          "height": 1200,
+          "title": "Logo Identity #1",
+          "category": "Brand & Logo Design",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGJUjuKd0k",
+          "image": "/assets/media/LOGO%20DESIGN/250f677cbb837c2d3e48716faa6e82b3.png",
+          "width": 2160,
+          "height": 2160,
+          "title": "Logo Identity #2",
+          "category": "Brand & Logo Design",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGJUmDRfr0",
+          "image": "/assets/media/LOGO%20DESIGN/461f654d9240e2c85cc52b13f2760693.png",
+          "width": 2400,
+          "height": 1920,
+          "title": "Logo Identity #3",
+          "category": "Brand & Logo Design",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGKoHU30dg",
+          "image": "/assets/media/LOGO%20DESIGN/ccd317259029585b67ea697f2815bc43.png",
+          "width": 1422,
+          "height": 1631,
+          "title": "Logo Identity #5",
+          "category": "Brand & Logo Design",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGLqzaCZpY",
+          "image": "/assets/media/LOGO%20DESIGN/1ce5a4df744e3422edd7e0b6256ae761.png",
+          "width": 2400,
+          "height": 2400,
+          "title": "Logo Identity #6",
+          "category": "Brand & Logo Design",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGLq9fMupQ",
+          "image": "/assets/media/LOGO%20DESIGN/66a3e767dcedeaf40c558fcd81021f3e.png",
+          "width": 2400,
+          "height": 2400,
+          "title": "Logo Identity #7",
+          "category": "Brand & Logo Design",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGVA0iujUo",
+          "image": "/assets/media/LOGO%20DESIGN/2e6e2ae42841521ae87b235d55d78aea.jpg",
+          "width": 2400,
+          "height": 2400,
+          "title": "Logo Identity #8",
+          "category": "Brand & Logo Design",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGVe4s25N8",
+          "image": "/assets/media/LOGO%20DESIGN/c611d8478d1dc0c076182feed8797a51.png",
+          "width": 2400,
+          "height": 2400,
+          "title": "Logo Identity #9",
+          "category": "Brand & Logo Design",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGWaigb8r8",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/792ae8bf509aba41c54f759c385d7829.png",
+          "width": 2400,
+          "height": 2400,
+          "title": "Logo Identity #10",
+          "category": "Brand & Logo Design",
+          "aspect": "square"
+        }
+      ]
+    },
+    {
+      "id": "brand_identity",
+      "label": "Rebranding & Brand Guides",
+      "desc": "Brand strategy, anatomy, typography, color palettes, and visual identity systems",
+      "items": [
+        {
+          "id": "MAGGswTkuhc",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/6994bdbed5a883ae9d1870e442955971.png",
+          "width": 1800,
+          "height": 1758,
+          "title": "Brand Identity Guide #2",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGGs-pqLBM",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/d0191b32c41672856882be3e0fd12128.png",
+          "width": 1800,
+          "height": 1113,
+          "title": "Brand Identity Guide #3",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGGs_AYMCY",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/d9467a7c565196656220a7ddb7f023cb.png",
+          "width": 897,
+          "height": 1800,
+          "title": "Brand Identity Guide #4",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGDa6TAMIk",
+          "image": "/assets/media/LOGO%20DESIGN/645d117eaca86626b6a22446eeced595.png",
+          "width": 2400,
+          "height": 1920,
+          "title": "Brand Identity Guide #5",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGGmqfdnqk",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/6e5dd9e4d81468efc6ac99954db1265a.png",
+          "width": 2400,
+          "height": 1854,
+          "title": "Brand Identity Guide #6",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGDa2ekQCs",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/5711fa2ad3db29b95ddcdea700d9b156.png",
+          "width": 2400,
+          "height": 1920,
+          "title": "Brand Identity Guide #7",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGDax4pdrM",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/9ef46e20627d2512d5fcabe7201fba41.png",
+          "width": 2400,
+          "height": 1920,
+          "title": "Brand Identity Guide #8",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGt4y-TLGE",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/2e7db589a8e1d47c30e34c403ae1690d.png",
+          "width": 1422,
+          "height": 2400,
+          "title": "Brand Identity Guide #9",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGt45H5xf0",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/b6efc3a5b51381e0ea30894e91ee39a7.png",
+          "width": 1422,
+          "height": 2400,
+          "title": "Brand Identity Guide #10",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGt4w0ZIMk",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/ef15632bf8c054a3daddabf465445674.png",
+          "width": 1422,
+          "height": 2400,
+          "title": "Brand Identity Guide #11",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGt414IgvA",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/b97ec57d9058045a4937c3c60e6d35f0.png",
+          "width": 1422,
+          "height": 2400,
+          "title": "Brand Identity Guide #12",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGt47zVyqQ",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/7ff3fe3518a7aee5e0ab424833cf0e7d.png",
+          "width": 1422,
+          "height": 2400,
+          "title": "Brand Identity Guide #13",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGt47EmHvA",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/060ded5075b6d70c7c4638738f4053f4.png",
+          "width": 1422,
+          "height": 2400,
+          "title": "Brand Identity Guide #14",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "portrait"
+        }
+      ]
+    },
+    {
+      "id": "social_media",
+      "label": "Social Media & Marketing",
+      "desc": "High-converting social collateral, promotional banners, and campaign graphics",
+      "items": [
+        {
+          "id": "MAGJU1pktUk",
+          "image": "/assets/media/SMM%20-%20SOCIAL%20MEDIA%20POSTING/da520f3b96b7605cf029b1da0cdc7b70.png",
+          "width": 1080,
+          "height": 1080,
+          "title": "Marketing Campaign #1",
+          "category": "Social Media & Marketing",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGJU7Jjec8",
+          "image": "/assets/media/SMM%20-%20SOCIAL%20MEDIA%20POSTING/9995af4f3ab5ccb579a8e60d0c7a5afb.png",
+          "width": 1080,
+          "height": 1080,
+          "title": "Marketing Campaign #2",
+          "category": "Social Media & Marketing",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGJU9A_rIk",
+          "image": "/assets/media/SMM%20-%20SOCIAL%20MEDIA%20POSTING/ba670a89d34de797e44a9f4ad3251304.png",
+          "width": 1080,
+          "height": 1080,
+          "title": "Marketing Campaign #3",
+          "category": "Social Media & Marketing",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGJU3-lGMc",
+          "image": "/assets/media/SMM%20-%20SOCIAL%20MEDIA%20POSTING/872af602ec38271f36870d841be7f9fc.png",
+          "width": 1080,
+          "height": 1080,
+          "title": "Marketing Campaign #4",
+          "category": "Social Media & Marketing",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGdu0ICv08",
+          "image": "/assets/media/SMM%20-%20SOCIAL%20MEDIA%20POSTING/00411c3f465c4214e45d326ecd93d3d1.png",
+          "width": 1080,
+          "height": 1080,
+          "title": "Marketing Campaign #5",
+          "category": "Social Media & Marketing",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGdu18EhzM",
+          "image": "/assets/media/SMM%20-%20SOCIAL%20MEDIA%20POSTING/ab36f5d0bf5fbdeefb1313d782f29360.png",
+          "width": 1080,
+          "height": 1080,
+          "title": "Marketing Campaign #6",
+          "category": "Social Media & Marketing",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGJU3TfHP0",
+          "image": "/assets/media/SMM%20-%20SOCIAL%20MEDIA%20POSTING/e0138060359171f427c58c3760f75ce2.png",
+          "width": 1080,
+          "height": 1080,
+          "title": "Marketing Campaign #7",
+          "category": "Social Media & Marketing",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGKcfiHE40",
+          "image": "/assets/media/SMM%20-%20SOCIAL%20MEDIA%20POSTING/35514c6d2618b2b326508e9a8682d1f1.png",
+          "width": 1080,
+          "height": 1080,
+          "title": "Marketing Campaign #8",
+          "category": "Social Media & Marketing",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGKcVOvvpo",
+          "image": "/assets/media/SMM%20-%20SOCIAL%20MEDIA%20POSTING/c31ed16ce44afa676530bd5486c99b4b.png",
+          "width": 1080,
+          "height": 1080,
+          "title": "Marketing Campaign #9",
+          "category": "Social Media & Marketing",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGVe0EVAvs",
+          "image": "/assets/media/SMM%20-%20SOCIAL%20MEDIA%20POSTING/f7878a32bfcd01d522da06a032f046de.png",
+          "width": 1080,
+          "height": 1080,
+          "title": "Marketing Campaign #10",
+          "category": "Social Media & Marketing",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGuPSyA5Kg",
+          "image": "/assets/media/SMM%20-%20SOCIAL%20MEDIA%20POSTING/01d14f07a9309a7850aacc2106fa3846.png",
+          "width": 2000,
+          "height": 2000,
+          "title": "Marketing Campaign #11",
+          "category": "Social Media & Marketing",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGKFMKTHXQ",
+          "image": "/assets/media/SMM%20-%20SOCIAL%20MEDIA%20POSTING/cedb7c5268aea27814d4820aaec8806a.png",
+          "width": 1080,
+          "height": 1080,
+          "title": "Marketing Campaign #12",
+          "category": "Social Media & Marketing",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGKFGxb980",
+          "image": "/assets/media/SMM%20-%20SOCIAL%20MEDIA%20POSTING/3746d4c59a83bfcc084751c880726236.png",
+          "width": 1080,
+          "height": 1080,
+          "title": "Marketing Campaign #13",
+          "category": "Social Media & Marketing",
+          "aspect": "square"
+        }
+      ]
+    },
+    {
+      "id": "posters_flyers",
+      "label": "Posters & Print Collateral",
+      "desc": "Visual storytelling posters, event promotions, flyers, and publication prints",
+      "items": [
+        {
+          "id": "MAGJU1f5TXM",
+          "image": "/assets/media/POSTER/0387bda5eaac0daffc6468af78c34169.png",
+          "width": 788,
+          "height": 940,
+          "title": "Poster Artwork #1",
+          "category": "Posters & Print Collateral",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGdunyxZcw",
+          "image": "/assets/media/POSTER/6223b2fc924063c7e489d52028979157.png",
+          "width": 1600,
+          "height": 2400,
+          "title": "Poster Artwork #2",
+          "category": "Posters & Print Collateral",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAF5j6XZoPg",
+          "image": "/assets/media/POSTER/fd1873947d41a98b378693e5a47a1d73.png",
+          "width": 1714,
+          "height": 2400,
+          "title": "Poster Artwork #3",
+          "category": "Posters & Print Collateral",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGKcsr4iHE",
+          "image": "/assets/media/POSTER/fb4f21fd0ed4f60b87139ed9172bf361.png",
+          "width": 788,
+          "height": 940,
+          "title": "Poster Artwork #4",
+          "category": "Posters & Print Collateral",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAF5j7sbQng",
+          "image": "/assets/media/POSTER/cac760d3e2d0ff1d349f2dbd39ba8e71.png",
+          "width": 1800,
+          "height": 2400,
+          "title": "Poster Artwork #5",
+          "category": "Posters & Print Collateral",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAF5k0vJhvc",
+          "image": "/assets/media/POSTER/77157fde1ba6a5ceece602b5827e6072.png",
+          "width": 1714,
+          "height": 2400,
+          "title": "Poster Artwork #6",
+          "category": "Posters & Print Collateral",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGuPRU2NXQ",
+          "image": "/assets/media/POSTER/c1ce3e5acc846ec9160fb9c88e397ff7.png",
+          "width": 1414,
+          "height": 2000,
+          "title": "Poster Artwork #7",
+          "category": "Posters & Print Collateral",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGuPRfVUmY",
+          "image": "/assets/media/POSTER/1333c2d552354a97ba8523c4ef402dd8.png",
+          "width": 1414,
+          "height": 2000,
+          "title": "Poster Artwork #8",
+          "category": "Posters & Print Collateral",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGuPcCreZQ",
+          "image": "/assets/media/POSTER/f77d472a4bd9adf7a1b05278a9b15d7f.png",
+          "width": 1545,
+          "height": 2000,
+          "title": "Poster Artwork #9",
+          "category": "Posters & Print Collateral",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGuPap_Naw",
+          "image": "/assets/media/POSTER/9af5455bb94e05f23f93db220974e135.png",
+          "width": 1545,
+          "height": 2000,
+          "title": "Poster Artwork #10",
+          "category": "Posters & Print Collateral",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGuPc8DRdE",
+          "image": "/assets/media/POSTER/3954977954b50eba1073535a0657bcbf.png",
+          "width": 1545,
+          "height": 2000,
+          "title": "Poster Artwork #11",
+          "category": "Posters & Print Collateral",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGuPVcBdzk",
+          "image": "/assets/media/POSTER/434697edd197c632d9249c8f4ca2d315.png",
+          "width": 1545,
+          "height": 2000,
+          "title": "Poster Artwork #12",
+          "category": "Posters & Print Collateral",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGuPT2yNvU",
+          "image": "/assets/media/POSTER/7d1fd9879a9f1efa525b8e5d6cdff1ad.png",
+          "width": 1545,
+          "height": 2000,
+          "title": "Poster Artwork #13",
+          "category": "Posters & Print Collateral",
+          "aspect": "portrait"
+        }
+      ]
+    },
+    {
+      "id": "mockups",
+      "label": "Mockups & Merchandise",
+      "desc": "Apparel mockups, premium brochures, merchandise, and editorial stationery",
+      "items": [
+        {
+          "id": "MAGB0VTlGwA",
+          "image": "/assets/media/APPAREL/c01d097dcccb376c9cbf03370814e905.png",
+          "width": 1700,
+          "height": 2000,
+          "title": "Product Mockup #1",
+          "category": "Mockups & Merchandise",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGt4iBsTXE",
+          "image": "/assets/media/APPAREL/31c539c06e3187d881e1ab4fecfd04b4.png",
+          "width": 1700,
+          "height": 2000,
+          "title": "Product Mockup #2",
+          "category": "Mockups & Merchandise",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGJVN2yG9U",
+          "image": "/assets/media/APPAREL/9c761119c0ed2d7a05136716107caa7b.png",
+          "width": 1700,
+          "height": 2000,
+          "title": "Product Mockup #3",
+          "category": "Mockups & Merchandise",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGt4gZq1z0",
+          "image": "/assets/media/APPAREL/72816d27236d7da6eac34ca2599e4d34.png",
+          "width": 1700,
+          "height": 2000,
+          "title": "Product Mockup #4",
+          "category": "Mockups & Merchandise",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGJVAgWp5Q",
+          "image": "/assets/media/APPAREL/0d104e22f4007ca27efe4e3894910587.png",
+          "width": 1700,
+          "height": 2000,
+          "title": "Product Mockup #5",
+          "category": "Mockups & Merchandise",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGt4oVkcUg",
+          "image": "/assets/media/APPAREL/75bdde057a2a2959ca27ab5e9f098f18.png",
+          "width": 1700,
+          "height": 2000,
+          "title": "Product Mockup #6",
+          "category": "Mockups & Merchandise",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGB0VdTHHI",
+          "image": "/assets/media/APPAREL/6c89d01f7aa3dc3f10e5c9686c8998a3.png",
+          "width": 1700,
+          "height": 2000,
+          "title": "Product Mockup #7",
+          "category": "Mockups & Merchandise",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGt4oaJ_D4",
+          "image": "/assets/media/APPAREL/61b9bc3906578e7ffe6692f17627e97e.png",
+          "width": 1700,
+          "height": 2000,
+          "title": "Product Mockup #8",
+          "category": "Mockups & Merchandise",
+          "aspect": "square"
+        },
+        {
+          "id": "MAF9xMJQbPs",
+          "image": "/assets/media/APPAREL/cb17f54481fdd46c162a86732c0184e1.png",
+          "width": 1700,
+          "height": 2000,
+          "title": "Product Mockup #9",
+          "category": "Mockups & Merchandise",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGt4n7rJfo",
+          "image": "/assets/media/APPAREL/ca4a5a3f6b6d929d90a6937a7590e0b5.png",
+          "width": 1700,
+          "height": 2000,
+          "title": "Product Mockup #10",
+          "category": "Mockups & Merchandise",
+          "aspect": "square"
+        },
+        {
+          "id": "MAF5k3VdDPc",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/17a04f6344230c76abe7cc652a3f2af7.png",
+          "width": 2000,
+          "height": 1545,
+          "title": "Product Mockup #11",
+          "category": "Mockups & Merchandise",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGJVGPQ5Ac",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/c77f15ade0e0e88f47aa46c7412a041a.png",
+          "width": 2000,
+          "height": 1545,
+          "title": "Product Mockup #12",
+          "category": "Mockups & Merchandise",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAF5k9onkcQ",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/cd6d5cfa3de674cd22cdd99e5f8f2ed4.png",
+          "width": 2000,
+          "height": 1545,
+          "title": "Product Mockup #13",
+          "category": "Mockups & Merchandise",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGJVMtfAwg",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/1e65468f44ef5e560ae82f45cc3c8717.png",
+          "width": 2000,
+          "height": 1545,
+          "title": "Product Mockup #14",
+          "category": "Mockups & Merchandise",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAF5k_9Z0rI",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/a7dfa7ad8d8e49d80bb9f2616d95b3e0.png",
+          "width": 577,
+          "height": 433,
+          "title": "Product Mockup #15",
+          "category": "Mockups & Merchandise",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGJVHjgY3g",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/0e787b1ccc9d351e9723886a85da2df6.png",
+          "width": 577,
+          "height": 433,
+          "title": "Product Mockup #16",
+          "category": "Mockups & Merchandise",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAF5kyZejxE",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/b3a13544bad9b80c59b4a6beddd73926.jpg",
+          "width": 2400,
+          "height": 1552,
+          "title": "Product Mockup #17",
+          "category": "Mockups & Merchandise",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGJVD_mtHw",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/73b946642ee3b572ff7b31ad90bac3b2.png",
+          "width": 2400,
+          "height": 1552,
+          "title": "Product Mockup #18",
+          "category": "Mockups & Merchandise",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAF5k3VrlMQ",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/2da2acb18da13b31b4730b4d7b476556.jpg",
+          "width": 2400,
+          "height": 1552,
+          "title": "Product Mockup #19",
+          "category": "Mockups & Merchandise",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGJVIma5zg",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/bc9dcdff7421115d9750a9ef1c78e6c5.png",
+          "width": 2400,
+          "height": 1552,
+          "title": "Product Mockup #20",
+          "category": "Mockups & Merchandise",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAF5k8kW7SE",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/f46a36bf626b2db014e9143a6cfbcbe5.jpg",
+          "width": 1600,
+          "height": 1120,
+          "title": "Product Mockup #21",
+          "category": "Mockups & Merchandise",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGJVEJJQIs",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/7c6bc576ab667ba9a76fb999a6b1802b.png",
+          "width": 1600,
+          "height": 1120,
+          "title": "Product Mockup #22",
+          "category": "Mockups & Merchandise",
+          "aspect": "landscape"
+        }
+      ]
+    },
+    {
+      "id": "web_ui",
+      "label": "UI/UX & Web Design",
+      "desc": "Responsive web platforms, modern UI layouts, and user-centric digital experiences",
+      "items": [
+        {
+          "id": "MAGt4Jul13w",
+          "image": "/assets/media/WEB%20DESIGN/866ae0989a4afe1e2d0cb0004b6d4c72.png",
+          "width": 1920,
+          "height": 1280,
+          "title": "Web Experience #1",
+          "category": "UI/UX & Web Design",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGt484wT1s",
+          "image": "/assets/media/WEB%20DESIGN/98d18916590262d25e9fdf7930970608.png",
+          "width": 1920,
+          "height": 1280,
+          "title": "Web Experience #2",
+          "category": "UI/UX & Web Design",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGt4HXNZ9o",
+          "image": "/assets/media/WEB%20DESIGN/2a63f059c061a5e1de2e9ac518440cbf.png",
+          "width": 1920,
+          "height": 1280,
+          "title": "Web Experience #3",
+          "category": "UI/UX & Web Design",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGt4-YKIGw",
+          "image": "/assets/media/WEB%20DESIGN/66466f3bf6d6037168592a3a5b728ff6.png",
+          "width": 1920,
+          "height": 1280,
+          "title": "Web Experience #4",
+          "category": "UI/UX & Web Design",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGt4G0WEVI",
+          "image": "/assets/media/WEB%20DESIGN/3fa84c666250a4f7372ad769f8fdb524.jpg",
+          "width": 1920,
+          "height": 1280,
+          "title": "Web Experience #5",
+          "category": "UI/UX & Web Design",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGt4IYANc0",
+          "image": "/assets/media/WEB%20DESIGN/9d6fcc1f97c2856ae1652b24cb8b8492.jpg",
+          "width": 1920,
+          "height": 1280,
+          "title": "Web Experience #6",
+          "category": "UI/UX & Web Design",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGt4J8MPeM",
+          "image": "/assets/media/WEB%20DESIGN/db755560bd0dfbc523a18eae4e5ac444.jpg",
+          "width": 1920,
+          "height": 1280,
+          "title": "Web Experience #7",
+          "category": "UI/UX & Web Design",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGt4HVR8yA",
+          "image": "/assets/media/WEB%20DESIGN/d54c544509832285ad220736fae43bc9.jpg",
+          "width": 1920,
+          "height": 1280,
+          "title": "Web Experience #8",
+          "category": "UI/UX & Web Design",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGt4Hp-UaA",
+          "image": "/assets/media/WEB%20DESIGN/fb60bd27e79ef7daa4476b8387c5f302.jpg",
+          "width": 1920,
+          "height": 1280,
+          "title": "Web Experience #9",
+          "category": "UI/UX & Web Design",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGt4B4OPvA",
+          "image": "/assets/media/WEB%20DESIGN/c8319c913b03a660a0255e01269b631b.jpg",
+          "width": 1920,
+          "height": 1280,
+          "title": "Web Experience #10",
+          "category": "UI/UX & Web Design",
+          "aspect": "landscape"
+        }
+      ]
+    },
+    {
+      "id": "vector_arts",
+      "label": "Vector Art & Banners",
+      "desc": "Stylized vector character illustrations, digital artworks, and display banners",
+      "items": [
+        {
+          "id": "MAFzGuDL0-M",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/65cdc6415d89bbaebd2d1e961ccd5d3b.png",
+          "width": 447,
+          "height": 559,
+          "title": "Vector Artwork #1",
+          "category": "Vector Art & Banners",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAFzGhUqJV8",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/da23ed581be9cd21003187e44239425d.png",
+          "width": 408,
+          "height": 612,
+          "title": "Vector Artwork #2",
+          "category": "Vector Art & Banners",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAFzGu17qds",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/ed6c287ac807e11084ae86da5ea87049.png",
+          "width": 447,
+          "height": 559,
+          "title": "Vector Artwork #3",
+          "category": "Vector Art & Banners",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAFzGrA3qns",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/20b47a74293311c2a65290f1ab84b835.png",
+          "width": 374,
+          "height": 667,
+          "title": "Vector Artwork #4",
+          "category": "Vector Art & Banners",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGLqz6hGHw",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/f37e9f9469088bdf7720ca8ea39f4ec6.png",
+          "width": 2400,
+          "height": 1200,
+          "title": "Vector Artwork #5",
+          "category": "Vector Art & Banners",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGLq_Uc9LE",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/425a58654876ac96136a9893bb4c0d76.png",
+          "width": 2400,
+          "height": 1200,
+          "title": "Vector Artwork #6",
+          "category": "Vector Art & Banners",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGLq18VDx4",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/9c7e475b27e0da0b652d5dfc970d2315.png",
+          "width": 2400,
+          "height": 1200,
+          "title": "Vector Artwork #7",
+          "category": "Vector Art & Banners",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGLq9fFm7w",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/f2eb9b2cbdefd95f28622ff3da966498.png",
+          "width": 2400,
+          "height": 1200,
+          "title": "Vector Artwork #8",
+          "category": "Vector Art & Banners",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGKFO8Q60g",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/e1c559e8bb2099da198fee1b193cd53f.png",
+          "width": 2400,
+          "height": 1200,
+          "title": "Vector Artwork #9",
+          "category": "Vector Art & Banners",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGKWYdjgbs",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/2d3fb4705414797ae2021efe65e1ee5f.png",
+          "width": 2400,
+          "height": 1200,
+          "title": "Vector Artwork #10",
+          "category": "Vector Art & Banners",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGuPSOR0Bc",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/f0ad4ca41309cf53f7207bf321e8866c.png",
+          "width": 2400,
+          "height": 1440,
+          "title": "Vector Artwork #11",
+          "category": "Vector Art & Banners",
+          "aspect": "landscape"
+        },
+        {
+          "id": "MAGdu_-jUj0",
+          "image": "/assets/media/BROCHURES%20OR%20PUBLICATION%20MATERIALS/74aba09408eea985e305bc8aa368cc3a.png",
+          "width": 1080,
+          "height": 1080,
+          "title": "Vector Artwork #12",
+          "category": "Vector Art & Banners",
+          "aspect": "landscape"
+        }
+      ]
+    }
+  ]
+}
