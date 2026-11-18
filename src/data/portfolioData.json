@@ -239,6 +239,15 @@
           "title": "Logo Identity #10",
           "category": "Brand & Logo Design",
           "aspect": "square"
+        },
+        {
+          "id": "MAGCombinationLogo",
+          "image": "/assets/media/LOGO%20DESIGN/COMBINATION.png",
+          "width": 250,
+          "height": 250,
+          "title": "Logo Identity #11",
+          "category": "Brand & Logo Design",
+          "aspect": "square"
         }
       ]
     },
@@ -361,6 +370,60 @@
           "width": 1422,
           "height": 2400,
           "title": "Brand Identity Guide #14",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGLumiere1",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/LUMIERE.png",
+          "width": 1920,
+          "height": 3240,
+          "title": "Lumière Brand Guide #1",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGLumiere2",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/2.png",
+          "width": 1920,
+          "height": 3240,
+          "title": "Lumière Brand Guide #2",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGLumiere3",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/3.png",
+          "width": 1920,
+          "height": 3240,
+          "title": "Lumière Brand Guide #3",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGLumiere4",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/4.png",
+          "width": 1920,
+          "height": 3240,
+          "title": "Lumière Brand Guide #4",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGLumiere5",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/5.png",
+          "width": 1920,
+          "height": 3240,
+          "title": "Lumière Brand Guide #5",
+          "category": "Rebranding & Brand Guides",
+          "aspect": "portrait"
+        },
+        {
+          "id": "MAGLumiere6",
+          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/6.png",
+          "width": 1920,
+          "height": 3240,
+          "title": "Lumière Brand Guide #6",
           "category": "Rebranding & Brand Guides",
           "aspect": "portrait"
         }
