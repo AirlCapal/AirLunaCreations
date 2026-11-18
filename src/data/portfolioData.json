@@ -257,119 +257,29 @@
       "desc": "Brand strategy, anatomy, typography, color palettes, and visual identity systems",
       "items": [
         {
-          "id": "MAGGswTkuhc",
-          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/6994bdbed5a883ae9d1870e442955971.png",
-          "width": 1800,
-          "height": 1758,
-          "title": "Brand Identity Guide #2",
-          "category": "Rebranding & Brand Guides",
-          "aspect": "landscape"
-        },
-        {
-          "id": "MAGGs-pqLBM",
-          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/d0191b32c41672856882be3e0fd12128.png",
-          "width": 1800,
-          "height": 1113,
-          "title": "Brand Identity Guide #3",
-          "category": "Rebranding & Brand Guides",
-          "aspect": "landscape"
-        },
-        {
-          "id": "MAGGs_AYMCY",
-          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/d9467a7c565196656220a7ddb7f023cb.png",
-          "width": 897,
-          "height": 1800,
-          "title": "Brand Identity Guide #4",
-          "category": "Rebranding & Brand Guides",
-          "aspect": "portrait"
-        },
-        {
-          "id": "MAGDa6TAMIk",
-          "image": "/assets/media/LOGO%20DESIGN/645d117eaca86626b6a22446eeced595.png",
-          "width": 2400,
-          "height": 1920,
-          "title": "Brand Identity Guide #5",
-          "category": "Rebranding & Brand Guides",
-          "aspect": "landscape"
-        },
-        {
-          "id": "MAGGmqfdnqk",
-          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/6e5dd9e4d81468efc6ac99954db1265a.png",
-          "width": 2400,
-          "height": 1854,
-          "title": "Brand Identity Guide #6",
-          "category": "Rebranding & Brand Guides",
-          "aspect": "landscape"
-        },
-        {
-          "id": "MAGDa2ekQCs",
-          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/5711fa2ad3db29b95ddcdea700d9b156.png",
-          "width": 2400,
-          "height": 1920,
-          "title": "Brand Identity Guide #7",
-          "category": "Rebranding & Brand Guides",
-          "aspect": "landscape"
-        },
-        {
-          "id": "MAGDax4pdrM",
-          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/9ef46e20627d2512d5fcabe7201fba41.png",
-          "width": 2400,
-          "height": 1920,
-          "title": "Brand Identity Guide #8",
-          "category": "Rebranding & Brand Guides",
-          "aspect": "landscape"
-        },
-        {
-          "id": "MAGt4y-TLGE",
-          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/2e7db589a8e1d47c30e34c403ae1690d.png",
-          "width": 1422,
-          "height": 2400,
-          "title": "Brand Identity Guide #9",
-          "category": "Rebranding & Brand Guides",
-          "aspect": "portrait"
-        },
-        {
-          "id": "MAGt45H5xf0",
+          "id": "MAGBrandGuideHookGeek",
           "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/b6efc3a5b51381e0ea30894e91ee39a7.png",
           "width": 1422,
           "height": 2400,
-          "title": "Brand Identity Guide #10",
+          "title": "Brand Identity Guide #1",
           "category": "Rebranding & Brand Guides",
           "aspect": "portrait"
         },
         {
-          "id": "MAGt4w0ZIMk",
-          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/ef15632bf8c054a3daddabf465445674.png",
-          "width": 1422,
-          "height": 2400,
-          "title": "Brand Identity Guide #11",
-          "category": "Rebranding & Brand Guides",
-          "aspect": "portrait"
-        },
-        {
-          "id": "MAGt414IgvA",
+          "id": "MAGBrandGuideRedMockup",
           "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/b97ec57d9058045a4937c3c60e6d35f0.png",
           "width": 1422,
           "height": 2400,
-          "title": "Brand Identity Guide #12",
+          "title": "Brand Identity Guide #2",
           "category": "Rebranding & Brand Guides",
           "aspect": "portrait"
         },
         {
-          "id": "MAGt47zVyqQ",
-          "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/7ff3fe3518a7aee5e0ab424833cf0e7d.png",
-          "width": 1422,
-          "height": 2400,
-          "title": "Brand Identity Guide #13",
-          "category": "Rebranding & Brand Guides",
-          "aspect": "portrait"
-        },
-        {
-          "id": "MAGt47EmHvA",
+          "id": "MAGBrandGuide3DIsometric",
           "image": "/assets/media/BRAND%20GUIDE%20AND%20REBRANDING/060ded5075b6d70c7c4638738f4053f4.png",
           "width": 1422,
           "height": 2400,
-          "title": "Brand Identity Guide #14",
+          "title": "Brand Identity Guide #3",
           "category": "Rebranding & Brand Guides",
           "aspect": "portrait"
         },
