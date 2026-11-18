@@ -239,6 +239,15 @@
           "title": "Logo Identity #10",
           "category": "Brand & Logo Design",
           "aspect": "square"
+        },
+        {
+          "id": "MAGAsterLogo12",
+          "image": "/assets/media/LOGO%20DESIGN/ASTER_LOGO%20(12).png",
+          "width": 1024,
+          "height": 1024,
+          "title": "Aster Logo",
+          "category": "Brand & Logo Design",
+          "aspect": "square"
         }
       ]
     },
@@ -485,6 +494,15 @@
           "width": 1080,
           "height": 1080,
           "title": "Marketing Campaign #13",
+          "category": "Social Media & Marketing",
+          "aspect": "square"
+        },
+        {
+          "id": "MAGFinalPubmat",
+          "image": "/assets/media/SMM%20-%20SOCIAL%20MEDIA%20POSTING/FINAL%20PUBMAT.png",
+          "width": 1024,
+          "height": 1024,
+          "title": "Marketing Campaign #14",
           "category": "Social Media & Marketing",
           "aspect": "square"
         }
