@@ -834,29 +834,11 @@
       "desc": "Responsive web platforms, modern UI layouts, and user-centric digital experiences",
       "items": [
         {
-          "id": "MAGt4Jul13w",
-          "image": "/assets/media/WEB%20DESIGN/866ae0989a4afe1e2d0cb0004b6d4c72.png",
-          "width": 1920,
-          "height": 1280,
-          "title": "Web Experience #1",
-          "category": "UI/UX & Web Design",
-          "aspect": "landscape"
-        },
-        {
           "id": "MAGt484wT1s",
           "image": "/assets/media/WEB%20DESIGN/98d18916590262d25e9fdf7930970608.png",
           "width": 1920,
           "height": 1280,
-          "title": "Web Experience #2",
-          "category": "UI/UX & Web Design",
-          "aspect": "landscape"
-        },
-        {
-          "id": "MAGt4HXNZ9o",
-          "image": "/assets/media/WEB%20DESIGN/2a63f059c061a5e1de2e9ac518440cbf.png",
-          "width": 1920,
-          "height": 1280,
-          "title": "Web Experience #3",
+          "title": "Web Experience #1",
           "category": "UI/UX & Web Design",
           "aspect": "landscape"
         },
@@ -865,7 +847,7 @@
           "image": "/assets/media/WEB%20DESIGN/66466f3bf6d6037168592a3a5b728ff6.png",
           "width": 1920,
           "height": 1280,
-          "title": "Web Experience #4",
+          "title": "Web Experience #2",
           "category": "UI/UX & Web Design",
           "aspect": "landscape"
         },
@@ -874,7 +856,7 @@
           "image": "/assets/media/WEB%20DESIGN/3fa84c666250a4f7372ad769f8fdb524.jpg",
           "width": 1920,
           "height": 1280,
-          "title": "Web Experience #5",
+          "title": "Web Experience #3",
           "category": "UI/UX & Web Design",
           "aspect": "landscape"
         },
@@ -883,7 +865,7 @@
           "image": "/assets/media/WEB%20DESIGN/9d6fcc1f97c2856ae1652b24cb8b8492.jpg",
           "width": 1920,
           "height": 1280,
-          "title": "Web Experience #6",
+          "title": "Web Experience #4",
           "category": "UI/UX & Web Design",
           "aspect": "landscape"
         },
@@ -892,7 +874,7 @@
           "image": "/assets/media/WEB%20DESIGN/db755560bd0dfbc523a18eae4e5ac444.jpg",
           "width": 1920,
           "height": 1280,
-          "title": "Web Experience #7",
+          "title": "Web Experience #5",
           "category": "UI/UX & Web Design",
           "aspect": "landscape"
         },
@@ -901,7 +883,7 @@
           "image": "/assets/media/WEB%20DESIGN/d54c544509832285ad220736fae43bc9.jpg",
           "width": 1920,
           "height": 1280,
-          "title": "Web Experience #8",
+          "title": "Web Experience #6",
           "category": "UI/UX & Web Design",
           "aspect": "landscape"
         },
@@ -910,7 +892,7 @@
           "image": "/assets/media/WEB%20DESIGN/fb60bd27e79ef7daa4476b8387c5f302.jpg",
           "width": 1920,
           "height": 1280,
-          "title": "Web Experience #9",
+          "title": "Web Experience #7",
           "category": "UI/UX & Web Design",
           "aspect": "landscape"
         },
@@ -919,7 +901,7 @@
           "image": "/assets/media/WEB%20DESIGN/c8319c913b03a660a0255e01269b631b.jpg",
           "width": 1920,
           "height": 1280,
-          "title": "Web Experience #10",
+          "title": "Web Experience #8",
           "category": "UI/UX & Web Design",
           "aspect": "landscape"
         }
