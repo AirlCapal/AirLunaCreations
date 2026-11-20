@@ -14,156 +14,212 @@ const allWorks = categories.flatMap(cat =>
 
 export const SUGGESTED_PROMPTS = [
   "Show me your logo designs",
-  "What is your design & tech stack?",
   "Tell me about Celestial Esports rebrand",
+  "What is your tech & design stack?",
   "How can I hire you or get a quote?",
   "Show me UI/UX & Web projects",
-  "Where are you located & contact info?"
+  "Where are you located & contact info?",
+  "Who is Airl? Tell me your story",
+  "What client testimonials do you have?"
 ];
 
-export function processUserQuery(input, { onSelectImage, onNavigate, onToggleTheme }) {
+// Reliable section scroller with header offset compensation
+export function scrollToSection(selector) {
+  try {
+    const el = document.querySelector(selector);
+    if (el) {
+      const navOffset = 80;
+      const elementPosition = el.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      return true;
+    }
+  } catch (e) {
+    console.error('Scroll error:', e);
+  }
+  return false;
+}
+
+export function processUserQuery(input, { onSelectImage, onToggleTheme }) {
   const query = input.trim().toLowerCase();
 
   // 1. Theme toggle
-  if (query.includes('dark mode') || query.includes('light mode') || query.includes('toggle theme') || query.includes('change theme')) {
+  if (query.includes('dark mode') || query.includes('light mode') || query.includes('toggle theme') || query.includes('change theme') || query.includes('switch theme')) {
     if (onToggleTheme) onToggleTheme();
     return {
-      text: "I've toggled the portfolio appearance theme for you! 🌗 Let me know if you prefer dark obsidian or light studio mode.",
-      actions: []
+      text: "I've toggled the portfolio appearance theme for you! 🌗 You can switch anytime between Obsidian Dark and Studio Light.",
+      actions: [
+        { label: "Toggle Theme Again", target: "action", actionKey: "toggleTheme" }
+      ]
     };
   }
 
-  // 2. Navigation intents
-  if (query.includes('go to') || query.includes('jump to') || query.includes('scroll to') || query.includes('section')) {
-    if (query.includes('hero') || query.includes('top') || query.includes('home')) {
-      scrollToSection('#hero');
-      return { text: "Navigated you straight to the top overview.", actions: [] };
+  // 2. Who is Airl / Story / Bio / About
+  if (query.includes('who are you') || query.includes('who is airl') || query.includes('tell me about yourself') || query.includes('bio') || query.includes('story') || query.includes('about')) {
+    return {
+      text: `**Hey, I'm Airl** — founder of **AirLuna Creations (ALC)**.\n\n${profile.bio}\n\n• **Experience**: Nearly 6 years crafting brand marks, typography, publication prints, and digital web experiences.\n• **Philosophy**: Blending geometric precision with emotional visual storytelling.\n• **Rebrand Emblem**: The **All-Seeing Eye** (vision & clarity) united with the **Phoenix** (resilience & rebirth).`,
+      actions: [
+        { label: "Read Career Journey", target: "#chronicle" },
+        { label: "View Genesis Story", target: "#prologue" },
+        { label: "View Portfolio Works", target: "#archive" }
+      ]
+    };
+  }
+
+  // 3. Navigation intents
+  if (query.includes('go to') || query.includes('jump to') || query.includes('scroll to') || query.includes('navigate') || query.includes('section')) {
+    if (query.includes('hero') || query.includes('top') || query.includes('home') || query.includes('prologue')) {
+      scrollToSection('#prologue');
+      return { text: "Navigated you straight to the top Genesis section.", actions: [{ label: "Back to Showcase", target: "#showcase" }] };
     }
-    if (query.includes('logomark') || query.includes('logo')) {
-      scrollToSection('#logomarks');
-      return { text: "Navigated you to Chapter 02: Logomarks & Contrast Canvas.", actions: [] };
+    if (query.includes('logomark') || query.includes('logo') || query.includes('marks')) {
+      scrollToSection('#marks');
+      return { text: "Navigated you to Chapter 02: Logomarks & Contrast Canvas.", actions: [{ label: "View Marks", target: "#marks" }] };
     }
-    if (query.includes('celestial') || query.includes('rebrand') || query.includes('case study')) {
-      scrollToSection('#rebrand');
-      return { text: "Navigated you to the Celestial Esports Rebranding Case Study.", actions: [] };
+    if (query.includes('celestial') || query.includes('esports') || query.includes('rebrand') || query.includes('case study')) {
+      scrollToSection('#celestial');
+      return { text: "Navigated you to Chapter 03: Celestial Esports Complete Rebrand.", actions: [{ label: "Inspect Case Study", target: "#celestial" }] };
     }
-    if (query.includes('print') || query.includes('poster') || query.includes('social') || query.includes('merch')) {
-      scrollToSection('#prints');
-      return { text: "Navigated to Chapter 04: Print, Editorial & Social Collateral.", actions: [] };
+    if (query.includes('print') || query.includes('poster') || query.includes('social') || query.includes('merch') || query.includes('apparel')) {
+      scrollToSection('#print');
+      return { text: "Navigated to Chapter 04: Print, Editorial & Social Collateral.", actions: [{ label: "View Prints", target: "#print" }] };
     }
-    if (query.includes('web') || query.includes('digital') || query.includes('front-end') || query.includes('ui')) {
+    if (query.includes('web') || query.includes('digital') || query.includes('front-end') || query.includes('ui') || query.includes('ux')) {
       scrollToSection('#digital');
-      return { text: "Navigated to Chapter 05: Front-End Craft & UI Architecture.", actions: [] };
+      return { text: "Navigated to Chapter 05: Front-End Craft & UI Architecture.", actions: [{ label: "View Digital UI", target: "#digital" }] };
     }
-    if (query.includes('about') || query.includes('experience') || query.includes('career') || query.includes('profile')) {
-      scrollToSection('#profile');
-      return { text: "Navigated to Chapter 06: Career Path & Endorsements.", actions: [] };
+    if (query.includes('experience') || query.includes('career') || query.includes('chronicle') || query.includes('endorsements') || query.includes('review')) {
+      scrollToSection('#chronicle');
+      return { text: "Navigated to Chapter 06: Career Path & Endorsements.", actions: [{ label: "View Career Path", target: "#chronicle" }] };
     }
-    if (query.includes('archive') || query.includes('all works') || query.includes('repository')) {
+    if (query.includes('archive') || query.includes('all works') || query.includes('gallery') || query.includes('repository')) {
       scrollToSection('#archive');
-      return { text: "Navigated to Chapter 07: Complete Work Archive (Filterable gallery).", actions: [] };
+      return { text: "Navigated to Chapter 07: Complete Work Archive (Filterable gallery).", actions: [{ label: "Browse Archive", target: "#archive" }] };
     }
-    if (query.includes('contact') || query.includes('hire')) {
+    if (query.includes('contact') || query.includes('hire') || query.includes('touch') || query.includes('email')) {
       scrollToSection('#contact');
-      return { text: "Navigated to the Contact & Hire Me section.", actions: [] };
+      return { text: "Navigated to the Contact & Project Inquiry section.", actions: [{ label: "Send Message", target: "#contact" }] };
     }
   }
 
-  // 3. Contact & Hiring
-  if (query.includes('hire') || query.includes('contact') || query.includes('email') || query.includes('rate') || query.includes('pricing') || query.includes('quote') || query.includes('phone') || query.includes('reach')) {
+  // 4. Contact & Hiring & Rates
+  if (query.includes('hire') || query.includes('contact') || query.includes('email') || query.includes('rate') || query.includes('pricing') || query.includes('quote') || query.includes('phone') || query.includes('reach') || query.includes('cost') || query.includes('price')) {
     scrollToSection('#contact');
     return {
-      text: `Airl is currently open for freelance projects, brand identity commissions, and front-end development roles!\n\n• **Email**: [${profile.contacts.email}](mailto:${profile.contacts.email})\n• **Phone / WhatsApp**: ${profile.contacts.phone}\n• **Location**: ${profile.contacts.location}\n• **LinkedIn**: [Profile](${profile.contacts.linkedin})\n• **Instagram**: [@airluna.creations](${profile.contacts.instagram})\n\nI've also scrolled down to the direct contact form for you!`,
+      text: `Airl is currently open for freelance projects, brand identity commissions, UI/UX design, and frontend development!\n\n• **Email**: [${profile.contacts.email}](mailto:${profile.contacts.email})\n• **Phone / WhatsApp**: ${profile.contacts.phone}\n• **Location**: ${profile.contacts.location}\n• **LinkedIn**: [Connect on LinkedIn](${profile.contacts.linkedin})\n• **Instagram**: [@airluna.creations](${profile.contacts.instagram})\n\nFill out the quick inquiry form below or shoot an email directly for customized scope & estimates!`,
       actions: [
-        { label: "Open Contact Form", onClick: () => scrollToSection('#contact') },
+        { label: "Go to Contact Form", target: "#contact" },
         { label: "Send Email", href: `mailto:${profile.contacts.email}` }
       ]
     };
   }
 
-  // 4. Skills & Tech Stack
-  if (query.includes('skill') || query.includes('tool') || query.includes('software') || query.includes('tech stack') || query.includes('photoshop') || query.includes('figma') || query.includes('code') || query.includes('react')) {
+  // 5. Skills & Tech Stack
+  if (query.includes('skill') || query.includes('tool') || query.includes('software') || query.includes('tech stack') || query.includes('photoshop') || query.includes('figma') || query.includes('code') || query.includes('react') || query.includes('stack')) {
     return {
-      text: `Airl bridges visual artistry with frontend engineering:\n\n**Design Disciplines:**\n${profile.skills.map(s => `• ${s}`).join('\n')}\n\n**Software & Tech Stack:**\n${profile.tools.map(t => `• ${t}`).join('\n')}`,
+      text: `Airl combines visual branding artistry with frontend engineering:\n\n**Core Design Disciplines:**\n${profile.skills.map(s => `• ${s}`).join('\n')}\n\n**Design & Tech Stack:**\n${profile.tools.map(t => `• ${t}`).join('\n')}`,
       actions: [
-        { label: "View Web & UI Projects", onClick: () => scrollToSection('#digital') }
+        { label: "View Web & UI Projects", target: "#digital" },
+        { label: "View Logomarks", target: "#marks" }
       ]
     };
   }
 
-  // 5. Celestial Esports Rebrand
-  if (query.includes('celestial') || query.includes('esports') || query.includes('rebrand') && !query.includes('logo')) {
-    scrollToSection('#rebrand');
+  // 6. Celestial Esports Rebrand
+  if (query.includes('celestial') || query.includes('esports') || (query.includes('rebrand') && !query.includes('lumiere'))) {
+    scrollToSection('#celestial');
     return {
-      text: `As Creative Director for **Celestial Esports (2024–2025)**, Airl led a total visual transformation:\n\n• Reconstructed brand marks with mythical geometry & astronomical motifs\n• Designed official competitive esports jerseys, apparel mockups, and merchandise\n• Created social media tournament graphics, stream overlays, and banners\n\nI've navigated you to the interactive Celestial Case Study section.`,
+      text: `As Creative Director for **Celestial Esports (2024–2025)**, Airl led a total visual overhaul:\n\n• **Reconstructed Brand Geometry**: Formed celestial wings, starlight angles, and modern esports heraldry.\n• **Official Competitive Jersey**: Designed player team wear, geometric pattern systems, and fabric mockups.\n• **Social & Tournament Collateral**: Produced stream overlays, social posters, roster announcements, and victory pubmats.\n\nI've brought you directly to the interactive Celestial Case Study section.`,
       actions: [
-        { label: "Jump to Case Study", onClick: () => scrollToSection('#rebrand') }
+        { label: "Jump to Case Study", target: "#celestial" }
       ]
     };
   }
 
-  // 6. Experience & Education
-  if (query.includes('experience') || query.includes('background') || query.includes('work') || query.includes('career') || query.includes('education') || query.includes('degree') || query.includes('college')) {
+  // 7. Testimonials & Client Reviews
+  if (query.includes('testimonial') || query.includes('review') || query.includes('feedback') || query.includes('client') || query.includes('endorsement')) {
+    scrollToSection('#chronicle');
+    const quotes = profile.testimonials.map(t => `• *" ${t.quote} "* — **${t.name}** (${t.role})`).join('\n\n');
+    return {
+      text: `Here is what clients and collaborators say about working with Airl:\n\n${quotes}`,
+      actions: [
+        { label: "View in Career Section", target: "#chronicle" },
+        { label: "Work with Airl", target: "#contact" }
+      ]
+    };
+  }
+
+  // 8. Experience & Background
+  if (query.includes('experience') || query.includes('background') || query.includes('work') || query.includes('career') || query.includes('education') || query.includes('degree') || query.includes('college') || query.includes('university') || query.includes('resume')) {
+    scrollToSection('#chronicle');
     const expText = profile.experiences.map(e => `• **${e.role}** at *${e.company}* (${e.period}) — ${e.type}`).join('\n');
     const eduText = profile.education.map(ed => `• **${ed.degree}** — *${ed.institution}* (${ed.period})`).join('\n');
     return {
-      text: `Here is a summary of Airl's background:\n\n**Key Roles:**\n${expText}\n\n**Education:**\n${eduText}`,
+      text: `Here is Airl's professional timeline:\n\n**Key Positions:**\n${expText}\n\n**Education:**\n${eduText}`,
       actions: [
-        { label: "View Endorsements", onClick: () => scrollToSection('#profile') }
+        { label: "View Career Chronicle", target: "#chronicle" }
       ]
     };
   }
 
-  // 7. Specific Work Searches / Logo / Posters / Web
-  if (query.includes('logo') || query.includes('brand mark') || query.includes('icon')) {
+  // 9. Logos & Brand Marks
+  if (query.includes('logo') || query.includes('brand mark') || query.includes('icon') || query.includes('symbol') || query.includes('monogram')) {
     const logos = allWorks.filter(w => w.categoryId === 'logos');
-    const preview = logos.slice(0, 3);
-    scrollToSection('#logomarks');
+    const preview = logos.slice(0, 4);
+    scrollToSection('#marks');
     return {
-      text: `Here are brand marks and logo designs by Airl. There are ${logos.length} curated marks in the collection (including vector marks, monograms, and emblems). Click any thumbnail below to inspect it in full screen!`,
+      text: `Here are brand marks and logo designs created by Airl. The collection features ${logos.length} curated marks spanning minimalist monograms, esports crests, and corporate identity symbols.\n\nClick any thumbnail below to inspect it in full screen!`,
       items: preview,
       actions: [
-        { label: "Explore Logomarks Canvas", onClick: () => scrollToSection('#logomarks') }
+        { label: "Explore Logomarks Canvas", target: "#marks" },
+        { label: "Browse Full Archive", target: "#archive" }
       ]
     };
   }
 
-  if (query.includes('web') || query.includes('ui') || query.includes('front-end') || query.includes('frontend') || query.includes('website')) {
+  // 10. Web & UI/UX Design
+  if (query.includes('web') || query.includes('ui') || query.includes('ux') || query.includes('frontend') || query.includes('front-end') || query.includes('app') || query.includes('dashboard') || query.includes('interface')) {
     const web = allWorks.filter(w => w.categoryId === 'web_ui');
     scrollToSection('#digital');
     return {
-      text: `Airl designs and builds intuitive user interfaces using React, Tailwind CSS, and modern web architectures. Here are samples from recent web apps and dashboards:`,
-      items: web.slice(0, 3),
+      text: `Airl designs clean, high-performance web experiences using React, Tailwind CSS, and Figma. Here are recent interface design works:`,
+      items: web.slice(0, 4),
       actions: [
-        { label: "View Interactive Showcase", onClick: () => scrollToSection('#digital') }
+        { label: "View Digital UI Canvas", target: "#digital" }
       ]
     };
   }
 
-  if (query.includes('poster') || query.includes('print') || query.includes('brochure') || query.includes('pubmat') || query.includes('publication')) {
-    const posters = allWorks.filter(w => w.categoryId === 'posters_flyers' || w.categoryId === 'social_media');
-    scrollToSection('#prints');
+  // 11. Posters, Pubmats & Social Media
+  if (query.includes('poster') || query.includes('print') || query.includes('brochure') || query.includes('pubmat') || query.includes('publication') || query.includes('social') || query.includes('banner') || query.includes('flyer')) {
+    const prints = allWorks.filter(w => w.categoryId === 'posters_flyers' || w.categoryId === 'social_media');
+    scrollToSection('#print');
     return {
-      text: `Airl has produced dozens of event publication materials, editorial posters, and high-converting marketing pubmats:`,
-      items: posters.slice(0, 3),
+      text: `Airl has produced dozens of event publication materials, editorial posters, and high-converting social collateral:`,
+      items: prints.slice(0, 4),
       actions: [
-        { label: "View Editorial Canvas", onClick: () => scrollToSection('#prints') }
+        { label: "View Editorial Canvas", target: "#print" }
       ]
     };
   }
 
-  if (query.includes('lumiere') || query.includes('lumière') || query.includes('guide')) {
+  // 12. Lumière Brand Guide
+  if (query.includes('lumiere') || query.includes('lumière') || query.includes('guide') || query.includes('branding')) {
     const guides = allWorks.filter(w => w.categoryId === 'brand_identity');
     return {
-      text: `Here is the Lumière Brand Identity System and curated visual guidelines boards:`,
+      text: `Here is the Lumière Brand Guidelines System — comprehensive brand strategy, typography scales, color harmonies, and stationery collateral boards:`,
       items: guides.slice(0, 4),
       actions: [
-        { label: "View in Archive", onClick: () => scrollToSection('#archive') }
+        { label: "Browse in Archive", target: "#archive" }
       ]
     };
   }
 
-  // 8. General search across titles and categories
+  // 13. General search across titles and categories
   const matches = allWorks.filter(w => 
     w.title.toLowerCase().includes(query) || 
     w.categoryName.toLowerCase().includes(query)
@@ -171,31 +227,20 @@ export function processUserQuery(input, { onSelectImage, onNavigate, onToggleThe
 
   if (matches.length > 0) {
     return {
-      text: `Found ${matches.length} matching piece${matches.length > 1 ? 's' : ''} for "${input}". Click on any work to view in high resolution:`,
+      text: `Found ${matches.length} matching piece${matches.length > 1 ? 's' : ''} for "${input}". Click on any work below to inspect in high-resolution:`,
       items: matches.slice(0, 4),
       actions: [
-        { label: "Browse Full Archive", onClick: () => scrollToSection('#archive') }
+        { label: "Browse Full Archive", target: "#archive" }
       ]
     };
   }
 
-  // 9. Friendly conversational fallback
+  // 14. Friendly conversational fallback
   return {
-    text: `I'm Luna, Airl's AI Assistant! ✦\n\nI can help you navigate through Airl's work, inspect high-res designs, review skills and tech stacks, check experience and testimonials, or book a project.\n\nTry clicking one of the suggested prompts or ask me anything!`,
+    text: `I'm Luna, Airl's AI Concierge! ✦\n\nI can answer anything about Airl's work, background, and tech stack. Here are a few things you can ask me:\n\n• *"Show me your logo designs"*\n• *"Tell me about the Celestial Esports rebrand"*\n• *"What software & tools do you use?"*\n• *"How much does a brand package cost?"*\n• *"Scroll to career path or testimonials"*`,
     actions: [
-      { label: "View All Works", onClick: () => scrollToSection('#archive') },
-      { label: "Get in Touch", onClick: () => scrollToSection('#contact') }
+      { label: "Explore All Works", target: "#archive" },
+      { label: "Get in Touch", target: "#contact" }
     ]
   };
-}
-
-function scrollToSection(selector) {
-  try {
-    const el = document.querySelector(selector);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  } catch (e) {
-    console.error('Scroll error:', e);
-  }
 }
