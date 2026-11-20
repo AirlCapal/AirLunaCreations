@@ -14,12 +14,12 @@ const allWorks = categories.flatMap(cat =>
 
 export const SUGGESTED_PROMPTS = [
   "Show me your logo designs",
-  "Magkano ang pagawa ng logo / branding?",
   "Tell me about Celestial Esports rebrand",
-  "Ano ang skills at tools mo?",
-  "Paano kita pwedeng ma-contact?",
-  "Sino si Airl? Kwento mo naman",
+  "What is your tech & design stack?",
+  "How can I hire you or get a quote?",
   "Show me UI/UX & Web projects",
+  "Where are you located & contact info?",
+  "Who is Airl? Tell me your story",
   "What client testimonials do you have?"
 ];
 
