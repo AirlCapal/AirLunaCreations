@@ -58,14 +58,14 @@ export function processUserQuery(input, { onSelectImage, onToggleTheme }) {
     };
   }
 
-  // 2. Who is Airl / Story / Bio / About
-  if (query.includes('who are you') || query.includes('who is airl') || query.includes('tell me about yourself') || query.includes('bio') || query.includes('story') || query.includes('about')) {
+  // 2. Who is Airl / Story / Bio / About (Personal background)
+  if (query.includes('who are you') || query.includes('who is airl') || query.includes('tell me about yourself') || query.includes('bio') || query.includes('about airl') || query.includes('about yourself')) {
     return {
-      text: `**Hey, I'm Airl** — founder of **AirLuna Creations (ALC)**.\n\n${profile.bio}\n\n• **Experience**: Nearly 6 years crafting brand marks, typography, publication prints, and digital web experiences.\n• **Philosophy**: Blending geometric precision with emotional visual storytelling.\n• **Rebrand Emblem**: The **All-Seeing Eye** (vision & clarity) united with the **Phoenix** (resilience & rebirth).`,
+      text: `**Hey, I'm Airl** — graphic designer, brand strategist, and front-end developer based in Metro Manila.\n\n${profile.bio}\n\n• **Experience**: Nearly 6 years crafting identity systems, typography, esports branding, and intuitive front-end digital web interfaces.\n• **Creative Studio**: Founder & Lead Designer at **AirLuna Creations (ALC)**.`,
       actions: [
-        { label: "Read Career Journey", target: "#chronicle" },
+        { label: "View Career Path", target: "#chronicle" },
         { label: "View Genesis Story", target: "#prologue" },
-        { label: "View Portfolio Works", target: "#archive" }
+        { label: "Explore Works", target: "#archive" }
       ]
     };
   }
@@ -129,13 +129,14 @@ export function processUserQuery(input, { onSelectImage, onToggleTheme }) {
     };
   }
 
-  // 6. Celestial Esports Rebrand
-  if (query.includes('celestial') || query.includes('esports') || (query.includes('rebrand') && !query.includes('lumiere'))) {
+  // 6. Celestial Esports Rebranding Case Study
+  if (query.includes('celestial') || query.includes('esports') || query.includes('rebrand') || query.includes('phoenix') || query.includes('all-seeing eye') || query.includes('eye')) {
     scrollToSection('#celestial');
     return {
-      text: `As Creative Director for **Celestial Esports (2024–2025)**, Airl led a total visual overhaul:\n\n• **Reconstructed Brand Geometry**: Formed celestial wings, starlight angles, and modern esports heraldry.\n• **Official Competitive Jersey**: Designed player team wear, geometric pattern systems, and fabric mockups.\n• **Social & Tournament Collateral**: Produced stream overlays, social posters, roster announcements, and victory pubmats.\n\nI've brought you directly to the interactive Celestial Case Study section.`,
+      text: `### Celestial Esports — Logo Rebranding & Identity System ✦\n\nWhen Airl took the helm as Creative Director for **Celestial Esports (2024–2025)**, the goal was a total visual evolution:\n\n• **Problem with Old Logo**: Overcomplicated crest with fine globe outlines and busy silhouette layers that blurred on small phone screens and jersey embroidery.\n• **The Solution**: A modern, aerodynamic geometric phoenix mark with razor-sharp vector balance.\n• **Symbology**:\n  - **The Phoenix**: Resilience, rebirth, and rising from tournament losses to claim championship victory.\n  - **The All-Seeing Eye**: Omniscience, clarity, and relentless focus on the competitive objective.\n• **Team Palette**: Obsidian Noir (\`#000000\`), Celestial Forest (\`#1A5A43\`), Jade Mint (\`#2563eb\`), and Citron Gold (\`#38bdf8\`).\n• **Full Collateral System**: Official team jerseys, matchday posters, roster announcements, broadcast lower-thirds, and social victory cards.\n\nI've scrolled directly to Chapter 03 where you can view the Master Rebrand Board, Old vs. New comparison, and color swatches!`,
       actions: [
-        { label: "Jump to Case Study", target: "#celestial" }
+        { label: "Inspect Rebrand Board", target: "#celestial" },
+        { label: "View Team Jersey & Apparel", target: "#print" }
       ]
     };
   }
