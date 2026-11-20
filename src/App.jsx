@@ -12,12 +12,14 @@ import StoryAct5 from './components/StoryAct5.jsx';
 import StoryArchive from './components/StoryArchive.jsx';
 import StoryEpilogue from './components/StoryEpilogue.jsx';
 import Modal from './components/Modal.jsx';
+import AIAssistant from './components/AIAssistant.jsx';
 import { createWatermarkedImage } from './utils/watermark.js';
 
 export default function App() {
   const { profile, categories } = portfolioData;
   const [selectedItem, setSelectedItem] = useState(null);
   const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isAIOpen, setIsAIOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showTop, setShowTop] = useState(false);
 
@@ -128,6 +130,7 @@ export default function App() {
       <StoryNav
         isDarkMode={isDarkMode}
         setIsDarkMode={setIsDarkMode}
+        onOpenAI={() => setIsAIOpen(true)}
         activeChapter=""
       />
 
@@ -196,12 +199,21 @@ export default function App() {
         />
       )}
 
+      {/* AI Assistant (Luna AI) */}
+      <AIAssistant
+        onSelectImage={setSelectedItem}
+        isDarkMode={isDarkMode}
+        setIsDarkMode={setIsDarkMode}
+        isOpen={isAIOpen}
+        setIsOpen={setIsAIOpen}
+      />
+
       {/* ── Back to top button (desktop only, appears after scrolling) ── */}
       {showTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           aria-label="Back to top"
-          className={`hidden lg:flex fixed bottom-6 right-6 z-50 w-10 h-10 rounded-full items-center justify-center border shadow-lg transition-all hover:scale-110 active:scale-95 ${
+          className={`hidden lg:flex fixed bottom-20 right-6 z-40 w-10 h-10 rounded-full items-center justify-center border shadow-lg transition-all hover:scale-110 active:scale-95 ${
             isDarkMode
               ? 'bg-[#0d0f16]/90 border-white/[0.1] text-gray-300 hover:text-white backdrop-blur-xl'
               : 'bg-white/90 border-gray-200 text-gray-600 hover:text-gray-900 backdrop-blur-xl shadow-md'

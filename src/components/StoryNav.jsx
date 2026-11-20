@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Sun, Moon, Menu, X, ArrowUpRight } from 'lucide-react';
+import { Sun, Moon, Menu, X, ArrowUpRight, Sparkles } from 'lucide-react';
 
 const chapters = [
   { label: 'Home',      href: '#prologue' },
@@ -11,7 +11,7 @@ const chapters = [
   { label: 'Contact',   href: '#contact' },
 ];
 
-export default function StoryNav({ isDarkMode, setIsDarkMode }) {
+export default function StoryNav({ isDarkMode, setIsDarkMode, onOpenAI }) {
   const [scrolled, setScrolled]     = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [active, setActive]         = useState('#prologue');
@@ -107,6 +107,19 @@ export default function StoryNav({ isDarkMode, setIsDarkMode }) {
 
         {/* ── Right controls ── */}
         <div className="flex items-center gap-2 shrink-0">
+          <button
+            onClick={onOpenAI}
+            aria-label="Open AI Assistant"
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold border transition-all ${
+              isDarkMode
+                ? 'bg-blue-950/40 border-blue-500/40 text-blue-300 hover:bg-blue-900/50 hover:border-blue-400'
+                : 'bg-blue-50 border-blue-200 text-blue-600 hover:bg-blue-100'
+            }`}
+          >
+            <Sparkles className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
+            <span className="hidden md:inline">AI Guide</span>
+          </button>
+
           <button
             onClick={() => setIsDarkMode(!isDarkMode)}
             aria-label="Toggle theme"
