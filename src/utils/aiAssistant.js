@@ -110,10 +110,11 @@ export function processUserQuery(input, { onSelectImage, onToggleTheme }) {
   if (query.includes('hire') || query.includes('contact') || query.includes('email') || query.includes('rate') || query.includes('pricing') || query.includes('quote') || query.includes('phone') || query.includes('reach') || query.includes('cost') || query.includes('price')) {
     scrollToSection('#contact');
     return {
-      text: `Airl is currently open for freelance projects, brand identity commissions, UI/UX design, and frontend development!\n\n• **Email**: [${profile.contacts.email}](mailto:${profile.contacts.email})\n• **Phone / WhatsApp**: ${profile.contacts.phone}\n• **Location**: ${profile.contacts.location}\n• **LinkedIn**: [Connect on LinkedIn](${profile.contacts.linkedin})\n• **Instagram**: [@airluna.creations](${profile.contacts.instagram})\n\nFill out the quick inquiry form below or shoot an email directly for customized scope & estimates!`,
+      text: `Airl is currently open for freelance projects, brand identity commissions, UI/UX design, and frontend development!\n\n• **Studio Inquiries**: [${profile.contacts.email}](mailto:${profile.contacts.email})\n• **Direct / Personal Email**: [${profile.contacts.personalEmail}](mailto:${profile.contacts.personalEmail})\n• **Phone / WhatsApp**: ${profile.contacts.phone}\n• **Location**: ${profile.contacts.location}\n• **LinkedIn**: [Connect on LinkedIn](${profile.contacts.linkedin})\n• **Instagram**: [@airluna.creations](${profile.contacts.instagram})\n\nFill out the quick inquiry form below or shoot an email directly for customized scope & estimates!`,
       actions: [
         { label: "Go to Contact Form", target: "#contact" },
-        { label: "Send Email", href: `mailto:${profile.contacts.email}` }
+        { label: "Email Studio", href: `mailto:${profile.contacts.email}` },
+        { label: "Email Personal", href: `mailto:${profile.contacts.personalEmail}` }
       ]
     };
   }
